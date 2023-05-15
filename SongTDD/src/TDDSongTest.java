@@ -62,4 +62,25 @@ class TDDSongTest {
         assertEquals(cadenaEsperada, cadenaReal);
     }
 
+    @Test
+    public void cancionTest6() {
+        List<String> listaAnimales = Arrays.asList("fly", "spider", "bird");
+        String cadenaReal = TDDSong.cancion(listaAnimales);
+        String cadenaEsperada = "There was an old lady who swallowed a fly.\n" +
+                "I don't know why she swallowed a fly - perhaps she'll die!\n" +
+                "\n" +
+                "There was an old lady who swallowed a spider;\n" +
+                "That wriggled and wiggled and tickled inside her.\n" +
+                "She swallowed the spider to catch the fly;\n" +
+                "I don't know why she swallowed a fly - perhaps she'll die!\n" +
+                "\n" +
+                "There was an old lady who swallowed a bird;\n" +
+                "How absurd to swallow a bird.\n" +
+                "She swallowed the bird to catch the spider,\n" +
+                "She swallowed the spider to catch the fly;\n" +
+                "I don't know why she swallowed a fly - perhaps she'll die!\n" +
+                "\n";
+        assertEquals(cadenaEsperada, cadenaReal);
+    }
+
 }
