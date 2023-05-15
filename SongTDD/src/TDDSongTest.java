@@ -25,4 +25,13 @@ class TDDSongTest {
         assertEquals(cadenaEsperada, cadenaReal);
     }
 
+    @Test
+    public void cancionTest3() {
+        List<String> listaAnimales = Arrays.asList("spider");
+        String cadenaReal = TDDSong.cancion(listaAnimales);
+        String cadenaEsperada = "There was an old lady who swallowed a spider.\n" +
+                "I don't know why she swallowed a spider - perhaps she'll die!\n" ;
+        assertEquals(cadenaEsperada, cadenaReal);
+    }
+
 }
